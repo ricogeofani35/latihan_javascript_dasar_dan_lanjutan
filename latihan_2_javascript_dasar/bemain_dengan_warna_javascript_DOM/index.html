@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 DOM</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .ubah-warna {
+            margin: 20px auto;
+            text-align: center;
+            background-color: #ccc;
+            padding: 50px 10px;
+            border-radius: 10px;
+            width: 400px;
+        }
+        .ubah-warna input {
+            padding: 10px 20px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            text-align: center;
+        }
+        .ubah-warna button {
+            padding: 13px;
+            background-color: orange;
+            color: #fff;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        .black {
+            background-color: #000;
+        }
+        .dark-mode {
+            text-align: center;
+        }
+        .btn-mode {
+            background-color: blue;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 18px;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .range-warna {
+            margin: 20px auto;
+            border: 1px solid #000;
+            width: 400px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ccc;
+            border: none;
+        }
+        .merah, .hijau, .biru {
+            width: 50px;
+            height: 30px;
+            margin: 10px auto;
+        }
+        .merah {
+            background-color: red;
+        }
+        .hijau {
+            background-color: green;
+        }
+        .biru {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bermain dengan Warna</h1>
+        
+        <div class="dark-mode">
+            <button class="btn-mode">Dark</button>
+        </div>
+        <div class="acak-warna-container"></div>
+        <div class="range-warna">
+            <div class="merah"></div>
+            <input type="range" class="sMerah" min="0" max="255">
+            <div class="hijau"></div>
+            <input type="range" class="sHijau" min="0" max="255">
+            <div class="biru"></div>
+            <input type="range" class="sBiru" min="0" max="255">
+        </div>
+        <div class="ubah-warna">
+            <input type="text"  id="input-warna" placeholder="input warna">
+            <button type="buttun" id="btn-ubah-warna">Ubah Warna</button>
+        </div>
+    
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
